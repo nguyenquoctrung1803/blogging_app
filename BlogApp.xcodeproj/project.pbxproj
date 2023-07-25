@@ -24,6 +24,9 @@
 		C52B2B232A6FC26900A69229 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B222A6FC26900A69229 /* AuthManager.swift */; };
 		C52B2B252A6FC27700A69229 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B242A6FC27700A69229 /* StorageManager.swift */; };
 		C52B2B2B2A6FCBE000A69229 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52B2B2A2A6FCBE000A69229 /* StoreKit.framework */; };
+		C52B2B342A700DBD00A69229 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B332A700DBD00A69229 /* User.swift */; };
+		C52B2B362A700DC900A69229 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B352A700DC900A69229 /* BlogPost.swift */; };
+		C52B2B382A70157B00A69229 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C52B2B372A70157B00A69229 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		C52B2B222A6FC26900A69229 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		C52B2B242A6FC27700A69229 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		C52B2B2A2A6FCBE000A69229 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C52B2B332A700DBD00A69229 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C52B2B352A700DC900A69229 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		C52B2B372A70157B00A69229 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +75,6 @@
 				2B321AB93E351258C2DB2220 /* Pods-BlogApp.debug.xcconfig */,
 				559FB245752424DF4C96ADF6 /* Pods-BlogApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,21 +99,14 @@
 		C52B2AF72A6FBE1A00A69229 /* BlogApp */ = {
 			isa = PBXGroup;
 			children = (
+				C52B2B322A700DB000A69229 /* Model */,
 				C52B2B102A6FC03E00A69229 /* Managers */,
 				C52B2B0F2A6FC02E00A69229 /* Other */,
 				C52B2B0E2A6FC02400A69229 /* Controllers */,
 				C52B2B0D2A6FC00100A69229 /* View */,
-				C52B2B0C2A6FBFF900A69229 /* Model */,
 				C52B2B062A6FBE1D00A69229 /* Info.plist */,
 			);
 			path = BlogApp;
-			sourceTree = "<group>";
-		};
-		C52B2B0C2A6FBFF900A69229 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C52B2B0D2A6FC00100A69229 /* View */ = {
@@ -132,6 +130,7 @@
 		C52B2B0F2A6FC02E00A69229 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C52B2B372A70157B00A69229 /* GoogleService-Info.plist */,
 				C52B2B012A6FBE1D00A69229 /* Assets.xcassets */,
 				C52B2AF82A6FBE1A00A69229 /* AppDelegate.swift */,
 				C52B2AFA2A6FBE1A00A69229 /* SceneDelegate.swift */,
@@ -185,6 +184,15 @@
 				7C2620C5EBEA7A7A40F429C1 /* Pods_BlogApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C52B2B322A700DB000A69229 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C52B2B332A700DBD00A69229 /* User.swift */,
+				C52B2B352A700DC900A69229 /* BlogPost.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +257,7 @@
 			files = (
 				C52B2B052A6FBE1D00A69229 /* LaunchScreen.storyboard in Resources */,
 				C52B2B022A6FBE1D00A69229 /* Assets.xcassets in Resources */,
+				C52B2B382A70157B00A69229 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52B2B362A700DC900A69229 /* BlogPost.swift in Sources */,
 				C52B2B1B2A6FC1C600A69229 /* PostViewController.swift in Sources */,
 				C52B2B232A6FC26900A69229 /* AuthManager.swift in Sources */,
 				C52B2B212A6FC22F00A69229 /* DatabaseManager.swift in Sources */,
 				C52B2AFD2A6FBE1A00A69229 /* HomeViewController.swift in Sources */,
 				C52B2B1F2A6FC21600A69229 /* IAPManger.swift in Sources */,
 				C52B2B192A6FC19C00A69229 /* SignUpViewController.swift in Sources */,
+				C52B2B342A700DBD00A69229 /* User.swift in Sources */,
 				C52B2AF92A6FBE1A00A69229 /* AppDelegate.swift in Sources */,
 				C52B2B172A6FC18C00A69229 /* SignInViewController.swift in Sources */,
 				C52B2B1D2A6FC1DD00A69229 /* CreateNewPostViewController.swift in Sources */,
