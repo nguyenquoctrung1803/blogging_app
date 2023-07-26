@@ -27,6 +27,10 @@
 		C52B2B342A700DBD00A69229 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B332A700DBD00A69229 /* User.swift */; };
 		C52B2B362A700DC900A69229 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B352A700DC900A69229 /* BlogPost.swift */; };
 		C52B2B382A70157B00A69229 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C52B2B372A70157B00A69229 /* GoogleService-Info.plist */; };
+		C52B2B3B2A70CD6800A69229 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B3A2A70CD6800A69229 /* PayWallViewController.swift */; };
+		C52B2B3D2A70D14500A69229 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B3C2A70D14500A69229 /* Extensions.swift */; };
+		C52B2B3F2A70D45600A69229 /* PayWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B3E2A70D45600A69229 /* PayWallView.swift */; };
+		C52B2B412A70DDEE00A69229 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B402A70DDEE00A69229 /* PayWallDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		C52B2B332A700DBD00A69229 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C52B2B352A700DC900A69229 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		C52B2B372A70157B00A69229 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C52B2B3A2A70CD6800A69229 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		C52B2B3C2A70D14500A69229 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C52B2B3E2A70D45600A69229 /* PayWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallView.swift; sourceTree = "<group>"; };
+		C52B2B402A70DDEE00A69229 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				C52B2B032A6FBE1D00A69229 /* LaunchScreen.storyboard */,
+				C52B2B3E2A70D45600A69229 /* PayWallView.swift */,
+				C52B2B402A70DDEE00A69229 /* PayWallDescriptionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +130,7 @@
 		C52B2B0E2A6FC02400A69229 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C52B2B392A70CD5200A69229 /* Other */,
 				C52B2B262A6FC4F600A69229 /* Core Tab */,
 				C52B2B272A6FC53300A69229 /* Auth */,
 				C52B2B282A6FC54200A69229 /* Posts */,
@@ -134,6 +145,7 @@
 				C52B2B012A6FBE1D00A69229 /* Assets.xcassets */,
 				C52B2AF82A6FBE1A00A69229 /* AppDelegate.swift */,
 				C52B2AFA2A6FBE1A00A69229 /* SceneDelegate.swift */,
+				C52B2B3C2A70D14500A69229 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -193,6 +205,14 @@
 				C52B2B352A700DC900A69229 /* BlogPost.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C52B2B392A70CD5200A69229 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C52B2B3A2A70CD6800A69229 /* PayWallViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C52B2B362A700DC900A69229 /* BlogPost.swift in Sources */,
+				C52B2B412A70DDEE00A69229 /* PayWallDescriptionView.swift in Sources */,
 				C52B2B1B2A6FC1C600A69229 /* PostViewController.swift in Sources */,
 				C52B2B232A6FC26900A69229 /* AuthManager.swift in Sources */,
 				C52B2B212A6FC22F00A69229 /* DatabaseManager.swift in Sources */,
@@ -321,10 +342,13 @@
 				C52B2AF92A6FBE1A00A69229 /* AppDelegate.swift in Sources */,
 				C52B2B172A6FC18C00A69229 /* SignInViewController.swift in Sources */,
 				C52B2B1D2A6FC1DD00A69229 /* CreateNewPostViewController.swift in Sources */,
+				C52B2B3F2A70D45600A69229 /* PayWallView.swift in Sources */,
 				C52B2B122A6FC12800A69229 /* ProfileViewController.swift in Sources */,
 				C52B2B152A6FC16900A69229 /* TabbarViewController.swift in Sources */,
 				C52B2AFB2A6FBE1A00A69229 /* SceneDelegate.swift in Sources */,
+				C52B2B3D2A70D14500A69229 /* Extensions.swift in Sources */,
 				C52B2B252A6FC27700A69229 /* StorageManager.swift in Sources */,
+				C52B2B3B2A70CD6800A69229 /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

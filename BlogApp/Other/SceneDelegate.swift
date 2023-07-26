@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Todo: Update Vc to sign in vc if not signed in
         let vc: UIViewController
+        
         if AuthManager.shared.isSignedIn {
             vc = TabbarViewController()
         }else {
