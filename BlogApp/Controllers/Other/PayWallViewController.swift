@@ -72,7 +72,6 @@ class PayWallViewController: UIViewController {
                               width: view.width,
                               height: view.height/3.2
         )
-        
         termsService.frame = CGRect(x: 10, y: view.height - 100, width: view.width - 20, height: 100)
         restorebutton.frame = CGRect(x: 25, y: termsService.top - 70, width: view.width - 50, height: 50)
         buyButton.frame = CGRect(x: 25, y: restorebutton.top - 60, width: view.width - 50, height: 50)

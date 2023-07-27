@@ -18,6 +18,8 @@ class PayWallDescriptionView: UIView {
         return label
     }()
     
+    
+    
     private let priceLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -26,6 +28,8 @@ class PayWallDescriptionView: UIView {
         label.text = "$4.99 / month"
         return label
     }()
+    
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,9 +40,12 @@ class PayWallDescriptionView: UIView {
         
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -47,3 +54,4 @@ class PayWallDescriptionView: UIView {
     }
     
 }
+

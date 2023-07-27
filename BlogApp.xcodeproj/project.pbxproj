@@ -31,6 +31,7 @@
 		C52B2B3D2A70D14500A69229 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B3C2A70D14500A69229 /* Extensions.swift */; };
 		C52B2B3F2A70D45600A69229 /* PayWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B3E2A70D45600A69229 /* PayWallView.swift */; };
 		C52B2B412A70DDEE00A69229 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B402A70DDEE00A69229 /* PayWallDescriptionView.swift */; };
+		C52B2B432A71761F00A69229 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B2B422A71761E00A69229 /* SignInHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		C52B2B3C2A70D14500A69229 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C52B2B3E2A70D45600A69229 /* PayWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallView.swift; sourceTree = "<group>"; };
 		C52B2B402A70DDEE00A69229 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
+		C52B2B422A71761E00A69229 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				C52B2B032A6FBE1D00A69229 /* LaunchScreen.storyboard */,
 				C52B2B3E2A70D45600A69229 /* PayWallView.swift */,
 				C52B2B402A70DDEE00A69229 /* PayWallDescriptionView.swift */,
+				C52B2B422A71761E00A69229 /* SignInHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				C52B2B1F2A6FC21600A69229 /* IAPManger.swift in Sources */,
 				C52B2B192A6FC19C00A69229 /* SignUpViewController.swift in Sources */,
 				C52B2B342A700DBD00A69229 /* User.swift in Sources */,
+				C52B2B432A71761F00A69229 /* SignInHeaderView.swift in Sources */,
 				C52B2AF92A6FBE1A00A69229 /* AppDelegate.swift in Sources */,
 				C52B2B172A6FC18C00A69229 /* SignInViewController.swift in Sources */,
 				C52B2B1D2A6FC1DD00A69229 /* CreateNewPostViewController.swift in Sources */,
